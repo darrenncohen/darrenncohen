@@ -8,37 +8,49 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            background-color: #121212; /* Deep dark background */
+            color: #e0e0e0; /* Off-white text for readability */
             max-width: 600px;
             margin: 60px auto;
             padding: 0 20px;
-            text-align: center; /* Centers all text and inline elements */
+            text-align: center;
         }
         
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Makes the image round */
+            border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #eee;
+            border: 3px solid #333;
             margin-bottom: 20px;
         }
 
         h1 { 
             margin-top: 0;
             font-size: 2.2rem;
+            color: #ffffff;
         }
 
         h3 { 
-            color: #666; 
+            color: #bbbbbb; 
             margin-top: 40px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #333;
             padding-top: 20px;
+            text-align: left; /* Header aligned with links */
+        }
+
+        /* Container to keep the list centered but text left-aligned */
+        .contact-container {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            max-width: 300px; /* Adjust this to control how far left they sit */
         }
 
         ul { 
             list-style-type: none; 
             padding: 0; 
+            margin: 0;
         }
 
         li { 
@@ -47,13 +59,18 @@
         }
 
         a { 
-            color: #0066cc; 
+            color: #64b5f6; /* Softer blue for dark mode */
             text-decoration: none; 
             font-weight: 500;
         }
 
         a:hover { 
             text-decoration: underline; 
+            color: #90caf9;
+        }
+
+        strong {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -62,13 +79,15 @@
     <img src="profile_picture.jpg" alt="Darren Cohen" class="profile-img">
     <h1>Darren Cohen</h1>
 
-    <h3>Contact Me</h3>
-    <ul>
-        <li><strong>Signal:</strong> <a href="https://signal.me/#eu/lsA8ctyE3pFoxYdIDyxwrL9PmDUem_cElKY7MkQO6Qwpy23hbNhMM4uBBqgI9eVf">darrencohen.01</a></li>
-        <li><strong>E-mail:</strong> <a href="mailto:info@darrencohen.me">info@darrencohen.me</a></li>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/_darrencohen">_darrencohen</a></li>
-        <li><strong>Blue Sky:</strong> <a href="https://bsky.app/profile/darrencohen.me">@darrencohen.me</a></li>
-    </ul>
+    <div class="contact-container">
+        <h3>Contact Me</h3>
+        <ul>
+            <li><strong>Signal:</strong> <a href="https://signal.me/#eu/lsA8ctyE3pFoxYdIDyxwrL9PmDUem_cElKY7MkQO6Qwpy23hbNhMM4uBBqgI9eVf">darrencohen.01</a></li>
+            <li><strong>E-mail:</strong> <a href="mailto:info@darrencohen.me">info@darrencohen.me</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/_darrencohen">@_darrencohen</a></li>
+            <li><strong>Blue Sky:</strong> <a href="https://bsky.app/profile/darrencohen.me">@darrencohen.me</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
