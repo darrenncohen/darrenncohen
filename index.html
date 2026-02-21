@@ -10,26 +10,63 @@
             line-height: 1.6;
             color: #333;
             max-width: 600px;
-            margin: 40px auto;
+            margin: 60px auto;
             padding: 0 20px;
+            text-align: center; /* Centers all text and inline elements */
         }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h3 { color: #666; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 12px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover;
+            border: 3px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            margin-top: 0;
+            font-size: 2.2rem;
+        }
+
+        h3 { 
+            color: #666; 
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+
+        li { 
+            margin-bottom: 15px; 
+            font-size: 1.1rem;
+        }
+
+        a { 
+            color: #0066cc; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+
+        a:hover { 
+            text-decoration: underline; 
+        }
     </style>
 </head>
 <body>
 
+    <img src="profile_picture.jpg" alt="Darren Cohen" class="profile-img">
     <h1>Darren Cohen</h1>
 
     <h3>Contact Me</h3>
     <ul>
         <li><strong>Signal:</strong> <a href="https://signal.me/#eu/lsA8ctyE3pFoxYdIDyxwrL9PmDUem_cElKY7MkQO6Qwpy23hbNhMM4uBBqgI9eVf">darrencohen.01</a></li>
         <li><strong>E-mail:</strong> <a href="mailto:info@darrencohen.me">info@darrencohen.me</a></li>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/_darrencohen">@darren.cohen</a></li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/_darrencohen">_darrencohen</a></li>
         <li><strong>Blue Sky:</strong> <a href="https://bsky.app/profile/darrencohen.me">@darrencohen.me</a></li>
     </ul>
 
